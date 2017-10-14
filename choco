@@ -9,4 +9,6 @@ choco install visualstudiocode #安装 VS Code
 choco install conemu #安装ConEmu
 choco install sourcetree #安装SourceTree
 choco install jdk8 #安装jdk8
-#choco install git #安装Git
+choco install git #安装Git
+choco install ccleaner #安装清理工具
+choco install dropbox
