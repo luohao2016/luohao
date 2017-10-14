@@ -1,0 +1,39 @@
+### Author:IT民工
+### E-mail:jackluo2017@126.com
+
+#常用命令
+
+git init
+git add readme.txt
+git commit -m 'change1'
+git status
+git diff
+git reset --hard HEAD^
+git reset --hard a3f2ab4
+git checkout -- log.txt
+
+##push权限要求有SSH密码才能操作。
+先产生自己电脑上的ssh：    ssh-keygen -t rsa -C xxx@xxx.com
+然后把public部分添加到github上面，教程如下：
+http://www.cnblogs.com/papajia/p/4498288.html
+
+
+##关联一个远程库
+git remote add origin git@github.com:luohao2016/gitsample.git
+
+##第一次推送master分支的所有内容
+git push -u origin master
+如果报错“error: failed to push some refs to 'git@github.com:luohao2016/gitsample.git'”，
+因为服务器上有内容，不能覆盖，就执行下面语句：
+git push -f -u origin master
+
+##此后，每次本地提交后，只要有必要，就可以使用命令
+git push origin master
+
+#分支操作：
+查看分支：git branch
+创建分支：git branch <name>
+切换分支：git checkout <name>
+创建+切换分支：git checkout -b <name>
+合并某分支到当前分支：git merge <name>
+删除分支：git branch -d <name>
