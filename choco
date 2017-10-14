@@ -1,3 +1,12 @@
 
 ### 在win7下面通过如下命令即可安装choco（**安装之前要先下载安装7zip，不然下面指令执行的时候会出错**）
 powershell -NoProfile -ExecutionPolicy Bypass -Command "iex((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+
+#使用 Chocolatey 安装
+choco install googlechrome #安装 Chrome 浏览器
+choco install autohotkey.portable #安装 AutoHotKey
+choco install visualstudiocode #安装 VS Code
+choco install conemu #安装ConEmu
+choco install sourcetree #安装SourceTree
+choco install jdk8 #安装jdk8
+#choco install git #安装Git
