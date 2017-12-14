@@ -3,6 +3,7 @@
 
 #常用命令
 
+
 git init
 git add readme.txt
 git commit -m 'change1'
@@ -37,3 +38,7 @@ git push origin master
 创建+切换分支：git checkout -b <name>
 合并某分支到当前分支：git merge <name>
 删除分支：git branch -d <name>
+
+#删除上一个提交版本
+git reset --hard HEAD~1
+git push --force
