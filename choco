@@ -1,5 +1,6 @@
 ### win10里面取得管理员权限的cmd
-runas /user:administrator cmd
+win+x的快捷键，然后点击管理员权限运行command，接着执行下面指令：
+@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 
 ### 在win7下面通过如下命令即可安装choco（**安装之前要先下载安装7zip，不然下面指令执行的时候会出错**）
 powershell -NoProfile -ExecutionPolicy Bypass -Command "iex((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
