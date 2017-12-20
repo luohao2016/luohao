@@ -18,6 +18,11 @@ git checkout -- log.txt
 然后把public部分添加到github上面，教程如下：
 http://www.cnblogs.com/papajia/p/4498288.html
 
+## 实际开发中操作如下：
+git checkout -b dev
+git checkout master
+git merge --no-ff -m "merge with no-ff" dev
+git log --graph --pretty=oneline --abbrev-commit
 
 ##关联一个远程库
 git remote add origin git@github.com:luohao2016/gitsample.git
