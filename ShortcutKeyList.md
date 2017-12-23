@@ -85,7 +85,7 @@
 
 * 在新的后台标签页中打开网站	输入网址并按 Command + Enter 键
 
-* 跳转到地址栏	Command + l
+* 跳转到地址栏	Command + L
 
 * 重新加载当前网页	Command + r
 
